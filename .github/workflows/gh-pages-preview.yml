@@ -1,0 +1,64 @@
+name: Deploy GitHub Pages dev preview
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build preview site under the repository subpath
+        env:
+          REPO_NAME: ${{ github.event.repository.name }}
+        run: |
+          set -euo pipefail
+          mkdir -p dist
+          cp index.html dist/index.html
+          cp -r css dist/css
+          cp -r js dist/js
+
+          # This repo is served as the production site's root at appanooseforward.org via
+          # Cloudflare Workers, so its HTML/JS use root-absolute paths (e.g. /css/styles.css,
+          # /measure). GitHub Pages serves this preview under /REPO_NAME/ instead of the
+          # domain root, so prefix every same-site href/src with that subpath in the build
+          # output only; the committed source files are untouched.
+          sed -i -E "s#(href|src)=\"/#\1=\"/${REPO_NAME}/#g" dist/index.html
+          sed -i -E "s#(href|src)=\"/#\1=\"/${REPO_NAME}/#g" dist/js/main.js
+          sed -i "s#const BASE_PATH = \"\";#const BASE_PATH = \"/${REPO_NAME}\";#" dist/js/main.js
+
+          # Keep this placeholder-content preview out of search results.
+          sed -i 's#<meta charset="utf-8" />#<meta charset="utf-8" />\n    <meta name="robots" content="noindex, nofollow" />#' dist/index.html
+
+          # GitHub Pages has no server-side rewrites, so serve the SPA shell for any deep
+          # link (e.g. /REPO_NAME/faq) via the 404 fallback page.
+          cp dist/index.html dist/404.html
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

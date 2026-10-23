@@ -1,0 +1,12 @@
+.git/
+.github/
+.gitignore
+.assetsignore
+.dev.vars
+.env
+.env.*
+node_modules/
+README.md
+package.json
+package-lock.json
+wrangler.jsonc

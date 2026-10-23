@@ -1,0 +1,13 @@
+{
+  "name": "appanoose-forward",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Static SPA starter for appanooseforward.org",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
