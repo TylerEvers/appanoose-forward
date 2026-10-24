@@ -1,8 +1,8 @@
 # Appanoose Forward
 
-A static, client-side routed SPA for [appanooseforward.org](https://appanooseforward.org), served as Cloudflare Workers Static Assets. It uses plain HTML, CSS, and JavaScript; Wrangler handles local preview and deployment.
+A static, client-side routed site for [appanooseforward.org](https://appanooseforward.org), served as Cloudflare Workers Static Assets. It uses plain HTML, CSS, and JavaScript; Wrangler handles local preview and deployment.
 
-The page text is starter copy, not approved organizational information. Replace it before launch.
+The site presents Appanoose Forward's position opposing Public Measure AM and information about the proposed hotel/motel tax arrangement, the Tourism Commission, local investments, election eligibility, and related resources.
 
 ## Requirements
 
@@ -62,10 +62,14 @@ GitHub Actions**; the workflow handles every deploy after that.
 
 ## Before launch
 
-- Replace all starter/placeholder copy in `index.html` and the route templates in `js/main.js`
-  with approved, verified information, including the measure name/number, election date,
-  registration deadline, timeline, FAQ answers, voting links, and sources.
-- Update the page titles and descriptions in `js/main.js` and the initial metadata in `index.html`.
+- Verify the measure details, financial figures, legal descriptions, and claims in `index.html`
+  and the route templates in `js/main.js` against approved public sources.
+- Add approved URLs for the ballot language, Appanoose County Tourism report, 2025 visitor
+  spending data, Iowa Code Section 423A.7, and Appanoose Forward's Facebook page.
+- Replace `[Insert applicable committee disclosure information.]` with the approved committee
+  disclosure before publication.
+- Update the page titles and descriptions in `js/main.js` and the initial metadata in `index.html`
+  if the approved language changes.
 - Keep `sitemap.xml`, the canonical URLs, and `robots.txt` aligned with the public routes and production domain.
 - Add only approved public contact details. Do not put credentials, private information, or form secrets in this static site.
 - Check the pages at mobile and desktop widths, including keyboard navigation.

@@ -9,166 +9,315 @@ const routes = {
   "/": {
     title: "Appanoose Forward",
     description:
-      "Plain-language information about the upcoming ballot measure: what it does, key election dates, and how to vote.",
+      "Appanoose Forward opposes Public Measure AM, a proposal to replace the existing 7% county hotel/motel tax on November 3, 2026.",
     content: `
       <section class="hero" aria-labelledby="page-title">
-        <p class="eyebrow">Ballot measure information</p>
-        <h1 id="page-title">Understand Measure [name/number] before you vote</h1>
+        <p class="eyebrow">Supporting local communities. Protecting transparency in tourism funding.</p>
+        <h1 id="page-title">Appanoose Forward</h1>
         <p class="hero-copy">
-          Add an approved, plain-language, one- or two-sentence summary of the measure here.
-          Replace this sample copy with the organization's verified information before launch.
+          Appanoose Forward is a bipartisan political action committee made up of Appanoose County
+          residents committed to making our county a great place to live, work, visit, and thrive.
+          We oppose Public Measure AM on the November 3, 2026 ballot.
         </p>
         <div class="hero-actions">
-          <a class="button button-primary" href="/measure" data-route-link>What the measure does</a>
-          <a class="button button-secondary" href="/vote" data-route-link>How to vote</a>
+          <a class="button button-primary" href="/measure" data-route-link>Understand Public Measure AM</a>
+          <a class="button button-secondary" href="/vote" data-route-link>Who can vote</a>
         </div>
       </section>
+      <figure class="campaign-image">
+        <img
+          src="/assets/vote-no.jpg"
+          width="1920"
+          height="1080"
+          alt="Vote NO on Public Measure AM, November 3rd."
+        />
+      </figure>
       <section class="facts-strip" aria-label="Key dates and facts">
         <div class="fact">
           <p class="fact-label">Election Day</p>
-          <p class="fact-value">[Month Day, Year]</p>
+          <p class="fact-value">November 3, 2026</p>
         </div>
         <div class="fact">
-          <p class="fact-label">Registration deadline</p>
-          <p class="fact-value">[Month Day, Year]</p>
+          <p class="fact-label">Ballot measure</p>
+          <p class="fact-value">Public Measure AM</p>
         </div>
         <div class="fact">
-          <p class="fact-label">On the ballot as</p>
-          <p class="fact-value">[Measure name or number]</p>
+          <p class="fact-label">Proposed tax rate</p>
+          <p class="fact-value">7% (unchanged)</p>
         </div>
+      </section>
+      <section class="page-content" aria-labelledby="change-title">
+        <h2 id="change-title">What would Public Measure AM change?</h2>
+        <p>
+          The ballot asks voters in unincorporated Appanoose County to repeal the existing 7%
+          hotel/motel tax and replace it with another 7% tax. The tax rate would remain 7%; the
+          proposed change concerns who administers the revenue.
+        </p>
+        <p>
+          According to Appanoose Forward's understanding of the proposed funding arrangement,
+          administration of the county's hotel/motel tax revenue would return to the Appanoose
+          County Board of Supervisors if the measure passes.
+        </p>
+        <a class="button button-secondary" href="/measure" data-route-link>See what a YES or NO vote means</a>
+      </section>
+      <section class="page-content" aria-labelledby="investment-title">
+        <h2 id="investment-title">Two decades of local investment</h2>
+        <div class="facts-strip" aria-label="Tourism investment figures">
+          <div class="fact"><p class="fact-label">Invested over 20 years</p><p class="fact-value">$3.2 million</p></div>
+          <div class="fact"><p class="fact-label">Tourism grants awarded</p><p class="fact-value">$815,000</p></div>
+          <div class="fact"><p class="fact-label">Local grant recipients</p><p class="fact-value">96</p></div>
+        </div>
+        <p>
+          Tourism grants, marketing, events, and initiatives have supported Centerville, Moravia,
+          Moulton, Rathbun, and other parts of the county, including historic preservation, parks
+          and recreation, downtown revitalization, community events, and destination marketing.
+        </p>
+      </section>
+      <section class="page-content" aria-labelledby="questions-title">
+        <h2 id="questions-title">Questions about future funding remain</h2>
+        <p>
+          Iowa law requires at least 50% of local hotel/motel tax revenue to be spent on qualifying
+          tourism-related purposes, but does not require the money to pass through Appanoose County
+          Tourism. The ballot does not establish how much revenue would continue to support the
+          Commission's grants, events, or other programs.
+        </p>
+        <p>
+          Visitors spent an estimated $37.3 million in Appanoose County in 2025. Tourism spending
+          supports local businesses, employment, and public tax revenue.
+        </p>
+        <a class="button button-secondary" href="/faq" data-route-link>Read the funding questions</a>
+      </section>
+      <section class="page-content" aria-labelledby="visitor-impact-title">
+        <h2 id="visitor-impact-title">Tourism's economic impact</h2>
+        <p>
+          Visitors spent an estimated <strong>$37.3 million</strong> in Appanoose County in 2025.
+          Tourism spending reaches restaurants, lodging properties, local retailers, attractions,
+          and other businesses. It also contributes to employment and generates public tax revenue.
+        </p>
+        <p>
+          Appanoose County Tourism's historical investments have supported visitor attractions
+          and amenities enjoyed by local residents.
+        </p>
+      </section>
+      <section class="page-content" aria-labelledby="about-title">
+        <h2 id="about-title">About Appanoose Forward</h2>
+        <p>
+          Our committee currently opposes Public Measure AM and supports retaining the existing
+          Tourism Commission funding arrangement. We engage with issues affecting the long-term
+          success of Appanoose County and encourage community involvement in public decisions.
+        </p>
+        <a href="/sources" data-route-link>Review additional resources</a>
       </section>
     `
   },
   "/measure": {
-    title: "The Measure | Appanoose Forward",
-    description: "What the ballot measure does and how it got on the ballot.",
+    title: "Public Measure AM | Appanoose Forward",
+    description: "What Public Measure AM would change, what a YES or NO vote means, and what remains unknown.",
     content: `
       <section class="hero page-content" aria-labelledby="page-title">
-        <p class="eyebrow">The measure</p>
-        <h1 id="page-title">What Measure [name/number] would do</h1>
+        <p class="eyebrow">Public Measure AM</p>
+        <h1 id="page-title">What's really changing?</h1>
         <p>
-          Add an approved explanation of what the measure does here, written in plain language and
-          checked against the official ballot text. Link to the full measure text on the
-          <a href="/sources" data-route-link>sources page</a>.
+          The ballot asks voters in unincorporated Appanoose County to repeal the existing 7%
+          hotel/motel tax and replace it with another 7% tax. The tax rate would remain 7%. The
+          proposed change concerns who administers the revenue.
         </p>
       </section>
-      <section class="page-content timeline-section" aria-labelledby="timeline-title">
-        <h2 id="timeline-title">How it got on the ballot</h2>
-        <ol class="timeline">
-          <li class="timeline-item">
-            <p class="timeline-date">[Month Year]</p>
-            <p class="timeline-copy">Add the first milestone in the measure's history here.</p>
-          </li>
-          <li class="timeline-item">
-            <p class="timeline-date">[Month Year]</p>
-            <p class="timeline-copy">Add the next milestone here.</p>
-          </li>
-          <li class="timeline-item">
-            <p class="timeline-date">[Month Year]</p>
-            <p class="timeline-copy">
-              Add the final milestone, such as certification for the ballot, here.
-            </p>
-          </li>
-        </ol>
-        <a class="button button-primary" href="/faq" data-route-link>Read frequently asked questions</a>
+      <section class="page-content" aria-labelledby="vote-meaning">
+        <h2 id="vote-meaning">What does your vote mean?</h2>
+        <h3>A YES vote</h3>
+        <p>
+          Approves repeal of the existing 7% tax on December 31, 2026, and establishes a
+          replacement 7% tax on January 1, 2027. Under the proposed administrative arrangement,
+          the Board of Supervisors would assume responsibility for administering the county's
+          portion of the revenue.
+        </p>
+        <h3>A NO vote</h3>
+        <p>
+          Rejects the repeal-and-replacement proposal, leaving the existing tax in effect. The
+          current Tourism Commission arrangement would not be changed by this ballot measure,
+          although separate future actions concerning funding agreements remain possible.
+        </p>
+      </section>
+      <section class="page-content" aria-labelledby="tourism-system">
+        <h2 id="tourism-system">A tourism funding system established more than 20 years ago</h2>
+        <p>
+          Following voter-approved ballot measures in 2004, Appanoose County Tourism began
+          administering hotel/motel tax funds for the City of Centerville and unincorporated
+          Appanoose County in 2005.
+        </p>
+        <p>The nine-member Tourism Commission includes:</p>
+        <ul class="vote-steps">
+          <li>Three representatives appointed by the Appanoose County Board of Supervisors</li>
+          <li>Three representatives appointed by the City of Centerville</li>
+          <li>Three representatives appointed by PACT</li>
+        </ul>
+        <p>
+          This arrangement provides representation from three appointing organizations when
+          reviewing tourism priorities and investment opportunities.
+        </p>
+      </section>
+      <section class="page-content" aria-labelledby="oversight-title">
+        <h2 id="oversight-title">How are the funds overseen?</h2>
+        <p>
+          The Board of Supervisors currently has three appointed representatives on the Commission,
+          receives access to monthly financial reports and an annual report, and has an opportunity
+          to review and comment on the proposed annual budget.
+        </p>
+        <p>
+          According to Appanoose Forward's review of the existing process, the Board has not
+          requested changes to the Commission's proposed budgets.
+        </p>
+      </section>
+      <section class="page-content" aria-labelledby="investments-title">
+        <h2 id="investments-title">Two decades of local investments</h2>
+        <div class="facts-strip" aria-label="Tourism investment figures">
+          <div class="fact"><p class="fact-label">Invested over 20 years</p><p class="fact-value">$3.2 million</p></div>
+          <div class="fact"><p class="fact-label">Tourism grants awarded</p><p class="fact-value">$815,000</p></div>
+          <div class="fact"><p class="fact-label">Local grant recipients</p><p class="fact-value">96</p></div>
+        </div>
+        <p>
+          Tourism grants have supported projects in Centerville, Moravia, Moulton, Rathbun, and
+          other parts of the county. Funded projects include historic preservation, parks and
+          recreation, downtown revitalization, community events, and destination marketing.
+        </p>
+        <p>
+          Annual tourism funding has also supported longstanding traditions such as Pancake Day,
+          the Moravia Fall Festival, and the Moulton Jamboree. These programs rely on predictable
+          funding sources for annual planning. A future reduction in Appanoose County Tourism's
+          revenue could affect support available for community events and grant applicants.
+        </p>
+      </section>
+      <section class="page-content" aria-labelledby="visitor-impact-title">
+        <h2 id="visitor-impact-title">Tourism's economic impact</h2>
+        <p>
+          Visitors spent an estimated $37.3 million in Appanoose County in 2025. Tourism spending
+          reaches restaurants, lodging properties, local retailers, attractions, and other
+          businesses. It also contributes to employment and generates public tax revenue.
+        </p>
+        <p>
+          Appanoose County Tourism's historical investments have supported both visitor
+          attractions and amenities enjoyed by local residents.
+        </p>
+      </section>
+      <section class="page-content" aria-labelledby="funding-questions">
+        <h2 id="funding-questions">Why the funding arrangement matters</h2>
+        <p>
+          Iowa law requires at least 50% of local hotel/motel tax revenue to be spent on qualifying
+          tourism-related purposes. It does not require that money to pass through Appanoose County
+          Tourism. Under a new administrative arrangement, the Board of Supervisors could direct
+          the required tourism portion toward other qualifying expenses rather than continuing the
+          Commission's existing grant and funding programs.
+        </p>
+        <p>The ballot itself does not establish how much revenue would continue to flow through Appanoose County Tourism. Important questions include:</p>
+        <ul class="vote-steps">
+          <li>Would Appanoose County Tourism continue to receive a designated share of the county's hotel/motel tax revenue?</li>
+          <li>Would the current community grant program continue?</li>
+          <li>Would existing annual event funding remain available?</li>
+          <li>What review and reporting processes would apply to future funding decisions?</li>
+        </ul>
+        <p>These are among the funding questions Appanoose Forward has identified in explaining its opposition to Public Measure AM.</p>
+        <a class="button button-primary" href="/sources" data-route-link>Review additional resources</a>
       </section>
     `
   },
   "/faq": {
     title: "FAQ | Appanoose Forward",
-    description: "Frequently asked questions about the ballot measure.",
+    description: "Answers about Public Measure AM, who can vote, the tax rate, and tourism funding.",
     content: `
       <section class="hero page-content" aria-labelledby="page-title">
-        <p class="eyebrow">FAQ</p>
+        <p class="eyebrow">Public Measure AM</p>
         <h1 id="page-title">Frequently asked questions</h1>
       </section>
       <section class="page-content">
         <div class="faq-list">
           <details class="faq-item">
-            <summary>Add a frequently asked question here.</summary>
-            <p>Add the approved answer here, with a link to a source when possible.</p>
+            <summary>Does Public Measure AM increase the hotel/motel tax rate?</summary>
+            <p>No. The existing rate is 7%, and the proposed replacement tax would also be 7%. The proposed change concerns administration of the revenue.</p>
           </details>
           <details class="faq-item">
-            <summary>Add another frequently asked question here.</summary>
-            <p>Add the approved answer here, with a link to a source when possible.</p>
+            <summary>Who can vote on Public Measure AM?</summary>
+            <p>Only eligible voters in the unincorporated areas of Appanoose County will see the measure on their ballots. Residents within incorporated city limits will not vote on it.</p>
           </details>
           <details class="faq-item">
-            <summary>Add a third frequently asked question here.</summary>
-            <p>Add the approved answer here, with a link to a source when possible.</p>
+            <summary>What happens if I vote YES?</summary>
+            <p>A YES vote approves repeal of the existing 7% tax on December 31, 2026, and establishes a replacement 7% tax on January 1, 2027. Under the proposed administrative arrangement, the Board of Supervisors would administer the county's portion of the revenue.</p>
           </details>
           <details class="faq-item">
-            <summary>Add a fourth frequently asked question here.</summary>
-            <p>Add the approved answer here, with a link to a source when possible.</p>
+            <summary>What happens if I vote NO?</summary>
+            <p>A NO vote rejects the repeal-and-replacement proposal, leaving the existing tax in effect. This ballot measure would not change the current Tourism Commission arrangement. Separate future actions concerning funding agreements remain possible.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Does Iowa law require hotel/motel tax revenue to go through Appanoose County Tourism?</summary>
+            <p>No. Iowa law requires at least 50% of local hotel/motel tax revenue to be spent on qualifying tourism-related purposes, but it does not require those funds to pass through the Commission.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What tourism investments have been made?</summary>
+            <p>Over 20 years, tourism grants, marketing, events, and initiatives have represented $3.2 million in investment, including $815,000 in tourism grants awarded to 96 local grant recipients.</p>
           </details>
         </div>
-        <a class="button button-secondary" href="/contact" data-route-link>Ask a question</a>
+        <a class="button button-secondary" href="/contact" data-route-link>Questions about the measure?</a>
       </section>
     `
   },
   "/vote": {
     title: "How to Vote | Appanoose Forward",
-    description: "How to register, check your registration, and vote on this measure.",
+    description: "Election date and voter eligibility for Public Measure AM in Appanoose County.",
     content: `
       <section class="hero page-content" aria-labelledby="page-title">
-        <p class="eyebrow">How to vote</p>
-        <h1 id="page-title">How to vote on this measure</h1>
-        <p>Add approved, verified voting information for this election here.</p>
+        <p class="eyebrow">Election information</p>
+        <h1 id="page-title">Who can vote on Public Measure AM?</h1>
+        <p>
+          Only eligible voters in the unincorporated areas of Appanoose County will see Public
+          Measure AM on their ballots. Residents living within incorporated city limits will not
+          vote on this measure.
+        </p>
       </section>
       <section class="page-content">
-        <ul class="vote-steps">
-          <li>
-            <strong>Register to vote</strong> &mdash; Add a link to the official state or county
-            voter registration page here.
-          </li>
-          <li>
-            <strong>Check your registration</strong> &mdash; Add a link to the official
-            registration lookup tool here.
-          </li>
-          <li>
-            <strong>Vote early or by mail</strong> &mdash; Add approved absentee and early voting
-            dates and links here.
-          </li>
-          <li>
-            <strong>Find your polling place</strong> &mdash; Add a link to the official polling
-            place lookup tool here.
-          </li>
-        </ul>
-        <a class="button button-primary" href="/sources" data-route-link>See official sources</a>
+        <h2>Election Day</h2>
+        <p><strong>Tuesday, November 3, 2026</strong></p>
+        <p>For the official ballot language and additional resources, see the <a href="/sources" data-route-link>resources page</a>.</p>
+        <a class="button button-primary" href="/measure" data-route-link>Understand the measure</a>
       </section>
     `
   },
   "/sources": {
     title: "Sources | Appanoose Forward",
-    description: "Official, verifiable sources behind this page.",
+    description: "Additional resources about Public Measure AM, tourism investment, visitor spending, and Iowa law.",
     content: `
       <section class="hero page-content" aria-labelledby="page-title">
-        <p class="eyebrow">Sources</p>
-        <h1 id="page-title">Sources and official resources</h1>
+        <p class="eyebrow">Learn more about Public Measure AM</p>
+        <h1 id="page-title">Additional resources</h1>
         <p>
-          Add links to the official, verifiable sources behind this page here, such as the full
-          ballot measure text, county elections office, and public meeting records.
+          Review the ballot language, tourism investment information, visitor spending data, and
+          the Iowa law governing hotel/motel tax revenue.
         </p>
       </section>
       <section class="page-content">
         <ul class="source-list">
-          <li><a href="#">Add a link to the full measure text here</a></li>
-          <li><a href="#">Add a link to the county or state elections office here</a></li>
-          <li><a href="#">Add a link to relevant public meeting minutes or agendas here</a></li>
+          <li>Official Public Measure AM ballot language</li>
+          <li>Appanoose County Tourism 20-Year Investment &amp; Impact Report</li>
+          <li>2025 Iowa Visitor Spending Data</li>
+          <li>Iowa Code Section 423A.7</li>
+          <li>Appanoose Forward Facebook page</li>
         </ul>
+        <p>Questions about the measure or the existing tourism funding process can be directed to Appanoose Forward.</p>
       </section>
     `
   },
   "/contact": {
     title: "Contact | Appanoose Forward",
-    description: "Contact Appanoose Forward.",
+    description: "Information for questions about Public Measure AM and Appanoose County tourism funding.",
     content: `
       <section class="hero page-content" aria-labelledby="page-title">
-        <p class="eyebrow">Contact</p>
-        <h1 id="page-title">Get in touch</h1>
+        <p class="eyebrow">Appanoose Forward</p>
+        <h1 id="page-title">Questions about the measure?</h1>
         <p>
-          Add an approved public contact method here, or link to a secure contact form when one
-          is available.
+          Questions about Public Measure AM or the existing tourism funding process can be
+          directed to Appanoose Forward. See the Appanoose Forward Facebook page listed on our
+          <a href="/sources" data-route-link>additional resources page</a>.
         </p>
+        <p>Paid for by Appanoose Forward PAC. [Insert applicable committee disclosure information.]</p>
         <a class="button button-primary" href="/" data-route-link>Return home</a>
       </section>
     `

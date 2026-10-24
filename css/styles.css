@@ -133,25 +133,13 @@ button {
   text-decoration: none;
 }
 
-.brand strong {
+.brand-logo {
   display: block;
-  color: var(--color-accent-dark);
-  font-family: var(--font-display);
-  font-size: 1.25rem;
-  font-style: italic;
-}
-
-.brand-mark {
-  display: grid;
-  place-items: center;
-  inline-size: 2.65rem;
-  block-size: 2.65rem;
-  color: var(--color-ink);
-  background: var(--color-accent);
-  border-radius: 50%;
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  font-weight: 700;
+  flex: 0 0 auto;
+  inline-size: 11rem;
+  block-size: 3.5rem;
+  object-fit: cover;
+  object-position: center;
 }
 
 .nav-menu {
@@ -323,6 +311,17 @@ h1 {
   gap: 1rem;
   max-inline-size: 54rem;
   margin-block-start: 1.5rem;
+}
+
+.campaign-image {
+  max-inline-size: 54rem;
+  margin: 1.5rem 0 0;
+}
+
+.campaign-image img {
+  display: block;
+  inline-size: 100%;
+  block-size: auto;
 }
 
 .fact {
