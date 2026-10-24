@@ -30,6 +30,7 @@ jobs:
           cp index.html dist/index.html
           cp -r css dist/css
           cp -r js dist/js
+          cp -r assets dist/assets
 
           # This repo is served as the production site's root at appanooseforward.org via
           # Cloudflare Workers, so its HTML/JS use root-absolute paths (e.g. /css/styles.css,

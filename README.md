@@ -46,7 +46,7 @@ The `.github/workflows/gh-pages-preview.yml` workflow publishes a read-only prev
 site to GitHub Pages on every push to `main` (and via manual dispatch), separate from the
 production Cloudflare deployment above. GitHub Pages serves project sites from a subpath
 (`https://<owner>.github.io/<repo>/`) rather than the domain root, so the workflow copies
-`index.html`, `css/`, and `js/` into a build output and:
+`index.html`, `assets/`, `css/`, and `js/` into a build output and:
 
 - Prefixes root-absolute `href`/`src` attributes with the repository name so assets and
   in-app links resolve correctly under the subpath.
