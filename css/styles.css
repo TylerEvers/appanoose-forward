@@ -1,15 +1,16 @@
 :root {
   color-scheme: light;
-  --color-ink: #142b37;
-  --color-ink-muted: #425b65;
-  --color-paper: #fffdf8;
-  --color-surface: #f1eee5;
-  --color-accent: #dfb347;
-  --color-accent-dark: #765309;
-  --color-line: #d8d2c4;
+  --color-ink: #2c345c;
+  --color-ink-muted: #4d5879;
+  --color-paper: #ffffff;
+  --color-surface: #f3f5fa;
+  --color-accent: #7cac64;
+  --color-accent-dark: #3d5a34;
+  --color-blue: #84b4fc;
+  --color-line: #d9dfed;
   --font-body: "Segoe UI", system-ui, sans-serif;
   --font-display: Georgia, "Times New Roman", serif;
-  --shadow-card: 0 1.5rem 4rem rgb(20 43 55 / 0.12);
+  --shadow-card: 0 1.5rem 4rem rgb(44 52 92 / 0.12);
 }
 
 * {
@@ -75,7 +76,7 @@ button {
 
 .deadline-banner {
   color: var(--color-ink);
-  background: var(--color-accent);
+  background: var(--color-blue);
 }
 
 .deadline-banner-content {
@@ -112,7 +113,7 @@ button {
 }
 
 .deadline-banner-dismiss:hover {
-  background: rgb(20 43 55 / 0.12);
+  background: rgb(44 52 92 / 0.12);
 }
 
 .site-nav {
@@ -216,7 +217,7 @@ button {
   max-inline-size: 54rem;
   padding: clamp(2rem, 7vw, 5rem);
   background:
-    radial-gradient(ellipse at 90% 10%, rgb(223 179 71 / 0.22), transparent 42%),
+    radial-gradient(ellipse at 90% 10%, rgb(132 180 252 / 0.22), transparent 42%),
     var(--color-surface);
   box-shadow: var(--shadow-card);
 }
@@ -282,7 +283,7 @@ h1 {
 }
 
 .button-primary:hover {
-  background: #274451;
+  background: #202747;
 }
 
 .button-secondary {
@@ -291,7 +292,7 @@ h1 {
 }
 
 .button-secondary:hover {
-  background: rgb(20 43 55 / 0.06);
+  background: rgb(44 52 92 / 0.06);
 }
 
 .page-content h1 {
