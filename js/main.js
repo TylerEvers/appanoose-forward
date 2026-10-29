@@ -49,16 +49,57 @@ const routes = {
       <section class="page-content" aria-labelledby="change-title">
         <h2 id="change-title">What would Public Measure AM change?</h2>
         <p>
-          The ballot asks voters in unincorporated Appanoose County to repeal the existing 7%
-          hotel/motel tax and replace it with another 7% tax. The tax rate would remain 7%; the
-          proposed change concerns who administers the revenue.
+          Public Measure AM asks voters to repeal Appanoose County's existing 7% hotel/motel tax
+          and replace it with a new 7% tax beginning January 1, 2027.
         </p>
         <p>
-          According to Appanoose Forward's understanding of the proposed funding arrangement,
-          administration of the county's hotel/motel tax revenue would return to the Appanoose
-          County Board of Supervisors if the measure passes.
+          The tax rate would stay the same. What would change is who controls the revenue.
+        </p>
+        <p>
+          Under the current arrangement, county hotel/motel tax revenue is administered through
+          the nine-member Appanoose County Tourism Commission. If the measure passes,
+          administration would return to the three-member Appanoose County Board of Supervisors.
+        </p>
+        <p>
+          The measure does not specify whether funding would continue to be allocated to the
+          Tourism Commission or at what level.
         </p>
         <a class="button button-secondary" href="/measure" data-route-link>See what a YES or NO vote means</a>
+      </section>
+      <section class="page-content" aria-labelledby="funding-today-title">
+        <h2 id="funding-today-title">How is tourism funding managed today?</h2>
+        <p>
+          Appanoose County Tourism is overseen by a nine-member commission with three
+          representatives each from Appanoose County, the City of Centerville, and PACT.
+        </p>
+        <p>
+          The Commission maintains separate operating and reserve bank accounts from PACT,
+          reviews financial reports at its meetings, and develops an annual tourism budget.
+          Tourism updates and financial information are also shared with the Board of Supervisors
+          and Centerville City Council.
+        </p>
+        <p>
+          Tourism grant applications are evaluated using a standardized scoring process, and
+          final funding decisions are made by voting members of the Commission.
+        </p>
+      </section>
+      <section class="page-content" aria-labelledby="grant-process-title">
+        <h2 id="grant-process-title">How are tourism grants awarded, and how is the money accounted for?</h2>
+        <p>
+          Appanoose County Tourism uses a competitive grant process that is open to eligible
+          businesses, attractions, municipalities, and nonprofit organizations throughout the
+          county.
+        </p>
+        <p>
+          Commission members independently score applications using a standardized rubric before
+          reviewing projects together and voting on funding awards.
+        </p>
+        <p>
+          Grant recipients must submit year-end reports documenting project results and receipts
+          for approved expenditures. Funds used for unapproved purposes, or not properly
+          documented, are subject to repayment. Recipients who fail to complete the required
+          reporting are ineligible to apply in the following grant cycle.
+        </p>
       </section>
       <section class="page-content" aria-labelledby="investment-title">
         <h2 id="investment-title">Two decades of local investment</h2>
@@ -296,10 +337,34 @@ const routes = {
       <section class="page-content">
         <ul class="source-list">
           <li>Official Public Measure AM ballot language</li>
-          <li>Appanoose County Tourism 20-Year Investment &amp; Impact Report</li>
-          <li>2025 Iowa Visitor Spending Data</li>
-          <li>Iowa Code Section 423A.7</li>
-          <li>Appanoose Forward Facebook page</li>
+          <li>
+            <a href="/assets/20%20Year%20Appanoose%20County%20Tourism%20Report%20-%20Final%20.pdf" target="_blank" rel="noopener noreferrer">
+              20-Year Appanoose County Tourism Report (opens in a new tab)
+            </a>
+            &middot;
+            <a href="/assets/20%20Year%20Appanoose%20County%20Tourism%20Report%20-%20Final%20.pdf" download="20 Year Appanoose County Tourism Report - Final.pdf">
+              Download PDF
+            </a>
+          </li>
+          <li>
+            <a href="/assets/Appanoose%20County%20Tourism%20Graphic%20(2025%20Report)%20.pdf" target="_blank" rel="noopener noreferrer">
+              Appanoose County Tourism Graphic (2025 Report) (opens in a new tab)
+            </a>
+            &middot;
+            <a href="/assets/Appanoose%20County%20Tourism%20Graphic%20(2025%20Report)%20.pdf" download="Appanoose County Tourism Graphic (2025 Report).pdf">
+              Download PDF
+            </a>
+          </li>
+          <li>
+            <a href="https://www.legis.iowa.gov/docs/code/2025/423A.7.pdf" target="_blank" rel="noopener noreferrer">
+              Iowa Code Section 423A.7 (PDF)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=61595228097470" target="_blank" rel="noopener noreferrer">
+              Appanoose Forward on Facebook
+            </a>
+          </li>
         </ul>
         <p>Questions about the measure or the existing tourism funding process can be directed to Appanoose Forward.</p>
       </section>
