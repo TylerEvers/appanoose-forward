@@ -317,7 +317,7 @@ const routes = {
           directed to Appanoose Forward. See the Appanoose Forward Facebook page listed on our
           <a href="/sources" data-route-link>additional resources page</a>.
         </p>
-        <p>Paid for by Appanoose Forward PAC. [Insert applicable committee disclosure information.]</p>
+        <p>Paid For By Appanoose Forward PAC</p>
         <a class="button button-primary" href="/" data-route-link>Return home</a>
       </section>
     `
