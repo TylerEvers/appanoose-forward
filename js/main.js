@@ -336,23 +336,27 @@ const routes = {
       </section>
       <section class="page-content">
         <ul class="source-list">
-          <li>Official Public Measure AM ballot language</li>
+          <li>
+            <a href="/assets/Legal-Notice-2026.pdf#page=2" target="_blank" rel="noopener noreferrer">
+              Official Public Measure AM ballot language (Measure AM found on Page 2)
+            </a>
+          </li>
           <li>
             <a href="/assets/20%20Year%20Appanoose%20County%20Tourism%20Report%20-%20Final%20.pdf" target="_blank" rel="noopener noreferrer">
-              20-Year Appanoose County Tourism Report (opens in a new tab)
+              20-Year Appanoose County Tourism Report
             </a>
             &middot;
-            <a href="/assets/20%20Year%20Appanoose%20County%20Tourism%20Report%20-%20Final%20.pdf" download="20 Year Appanoose County Tourism Report - Final.pdf">
-              Download PDF
+            <a href="/assets/20%20Year%20Appanoose%20County%20Tourism%20Report%20-%20Final%20.pdf" download="20 Year Appanoose County Tourism Report - Final.pdf" aria-label="Download 20-Year Appanoose County Tourism Report PDF">
+              PDF
             </a>
           </li>
           <li>
             <a href="/assets/Appanoose%20County%20Tourism%20Graphic%20(2025%20Report)%20.pdf" target="_blank" rel="noopener noreferrer">
-              Appanoose County Tourism Graphic (2025 Report) (opens in a new tab)
+              Appanoose County Tourism Graphic (2025 Report)
             </a>
             &middot;
-            <a href="/assets/Appanoose%20County%20Tourism%20Graphic%20(2025%20Report)%20.pdf" download="Appanoose County Tourism Graphic (2025 Report).pdf">
-              Download PDF
+            <a href="/assets/Appanoose%20County%20Tourism%20Graphic%20(2025%20Report)%20.pdf" download="Appanoose County Tourism Graphic (2025 Report).pdf" aria-label="Download Appanoose County Tourism Graphic 2025 Report PDF">
+              PDF
             </a>
           </li>
           <li>
